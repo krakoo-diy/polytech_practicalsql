@@ -19,11 +19,9 @@ The directory 'spec' contains spefications defined by CTA stakeholders.
 ## SQL schema
 
 The directory 'SQL' contains 
-1. SQL script needed to create the SQL schema of the metadata.
-2. Python scripts needed produce benchmark
-    1. to populate the DB (perform the INSERT) 
-    2. to retrieve data (perform the SELECT)
+1. SQL scripts to connect and run SQL query against PostgresSQL DB.
 
-In order to run the benchmark, we use and Postgres instance located in google cloud.
-See https://cloud.google.com/sql/docs/postgres/connect-instance-cloud-shell
+
+In order to run the benchmark, we use and Postgres instance.
+
 
