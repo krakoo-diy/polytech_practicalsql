@@ -26,12 +26,12 @@ In order to run the benchmark, we use and Postgres instance.
 
 
 ## install the PostgreSQL DB : 
-###Installation with Docker
+### Installation with Docker
 
-####Prerequisite:
+#### Prerequisite:
 Ensure Docker is running on the host machine.
 
-####Deploying PostgreSQL:
+#### Deploying PostgreSQL:
 Run the following command to start a PostgreSQL container:
 
 'docker run --name my_postgres -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=mydb -p 15433:5432 -d postgres'
