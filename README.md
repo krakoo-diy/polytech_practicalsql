@@ -34,4 +34,7 @@ Ensure Docker is running on the host machine.
 #### Deploying PostgreSQL:
 Run the following command to start a PostgreSQL container:
 
-'docker run --name my_postgres -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=mydb -p 15433:5432 -d postgres'
+'docker run --name my_postgres -e POSTGRES_USER=ctauser -e POSTGRES_PASSWORD=ctapass -e POSTGRES_DB=ctadb -p 15433:5432 -d postgres'
+
+#### install third party libraries
+pip install psycopg2-binary
