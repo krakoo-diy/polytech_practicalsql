@@ -25,16 +25,19 @@ The directory 'SQL' contains
 In order to run the benchmark, we use and Postgres instance.
 
 
-## install the PostgreSQL DB : 
-### Installation with Docker
+## install the PostgreSQL DB with Docker
 
-#### Prerequisite:
+### Prerequisite:
 Ensure Docker is running on the host machine.
 
-#### Deploying PostgreSQL:
+### Deploying PostgreSQL:
 Run the following command to start a PostgreSQL container:
 
 'docker run --name my_postgres -e POSTGRES_USER=ctauser -e POSTGRES_PASSWORD=ctapass -e POSTGRES_DB=ctadb -p 15433:5432 -d postgres'
 
-#### install third party libraries
+### use the PostgreSQL client:
+Run the following command to start a PostgreSQL client and browse your DB instance:
+docker exec -it my_postgres psql -U ctauser -d ctadb
+
+### install third party libraries
 pip install psycopg2-binary
