@@ -1,6 +1,11 @@
 from configparser import ConfigParser
+import os
+
 
 def load_config(filename='database.ini', section='postgresql'):
+    if not os.path.isfile(filename):
+        filename = os.path.join('./SQL', filename)
+
     parser = ConfigParser()
     parser.read(filename)
 
